@@ -5,29 +5,28 @@
 
 	void SizeOfArrays(int *n, int *m)
 		{
-			int scanf_result;
 			int buffer_cleaner;
 
 			printf("Enter the size of the first array: ");
 
 			if(scanf("%d", n) != 1 || *n <= 0)
 				{ 
-					while(buffer_cleaner = getchar() != '\n' && buffer_cleaner != EOF);
+					while((buffer_cleaner = getchar()) != '\n' && buffer_cleaner != EOF);
 					puts("Invalid input!");
 					exit(1);
 				}
 
-			while(buffer_cleaner = getchar() != '\n' && buffer_cleaner != EOF);
+			while((buffer_cleaner = getchar()) != '\n' && buffer_cleaner != EOF);
 
 			printf("Enter the size of the second array: ");
 
 			if(scanf("%d", m) != 1 || *m <= 0)
 				{
-					while(buffer_cleaner = getchar() != '\n' && buffer_cleaner != EOF);
+					while((buffer_cleaner = getchar()) != '\n' && buffer_cleaner != EOF);
 					puts("Invalid input!");
 					exit(1);
 				}
-			while(buffer_cleaner = getchar() != '\n' && buffer_cleaner != EOF);
+			while((buffer_cleaner = getchar()) != '\n' && buffer_cleaner != EOF);
 		}
 
 	void FillArraysUp(int array1[], int array2[], int n, int m)
