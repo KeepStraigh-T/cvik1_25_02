@@ -14,8 +14,4 @@ functions.o: functions.c 1cvikh.h
 run: 1cvik_25_02.o functions.o
 	gcc 1cvik_25_02.o functions.o -o 1cvik
 	./1cvik
-<<<<<<< HEAD
-	rm *.o
-=======
 	rm *.exe *.o
->>>>>>> cfcd62858e4214f5788be2057386d65bcfc86bd6
